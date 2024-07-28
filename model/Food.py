@@ -32,6 +32,18 @@ class food:
          return self.list
      def add_food(self,cook):
          self.list.append(cook)
+         self.saveAllfood()
+     def delete_food_by_name(self,name_food):
+         for food in self.list :
+             if food.getName() == name_food:
+                 self.list.remove (food)
+         self.saveAllfood()
+     def edit_food_by_name(self,nameoldcook,newcook):
+          for food in self.list :
+             if food.getName() == nameoldcook:
+                 self.list.remove (food)
+                 self.list.append(newcook)
+          self.saveAllfood()
      def show_all_food(self):
          for i in self.list:
              i.show()
@@ -39,8 +51,17 @@ class food:
             jsonfile = list()
             for account in self.list:
                 jsonfile.append(account.__dict__)
-            with open("food.json","w") as file:
-                json.dump(jsonfile, file ,indent=2)
+            with open("data/food.json","w") as file:
+                json.dump(jsonfile, file ,indent=5)
+     def searchfoodbyname(self,name):
+         result = []
+         for cook in self.list:
+             if name in cook.getName():
+                 result.append(cook)
+                 cook.show()
+         return result
+             
+         
      def loadAllFood(self):
     
              with open ("data/food.json","r") as file:
@@ -48,6 +69,11 @@ class food:
                  for cok in jsonfile:
                      Cook = cook(cok["id"],cok["name"],cok["date"],cok["score"],cok["link"])
                      self.add_food(Cook)
-    
+
+L = food()
+
+L.delete_food_by_name("thit kho hot vit")
+L.edit_food_by_name("thit cho",cook("1000","An la ia","16/7","100","https://www.bachhoaxanh.com/thit-heo"))
+L.searchfoodbyname("An la ")
 
 
