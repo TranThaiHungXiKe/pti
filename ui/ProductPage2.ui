@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>841</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>971</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(57, 60, 68)</string>
+    </property>
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>30</y>
+       <width>841</width>
+       <height>721</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:10px;background-color:rgb(31, 31, 31)</string>
+     </property>
+     <widget class="QLabel" name="label_84">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>371</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Pictures/Screenshots/Screenshot 2024-06-30 223013.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_85">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>50</y>
+        <width>341</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Pictures/Screenshots/Screenshot 2024-07-02 181839.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_86">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>250</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Cánh gà chiên nước mắm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>320</y>
+        <width>671</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(57, 60, 68)</string>
+      </property>
+      <property name="text">
+       <string>Nguyên liệu:500g cánh gà hoặc đùi gà (tùy sở thích) 3-4 tép tỏi băm nhỏ 1-2 quả ớt (tùy khẩu vị) 2-3 muỗng canh nước mắm 1-2 muỗng canh đường 1 muỗng canh nước lọc 1 muỗng canh nước cốt chanh (tùy chọn) 1/2 muỗng cà phê tiêu Bột chiên giòn hoặc bột bắp (tùy chọn)
+Dầu ăn để chiên Cách làm:Chuẩn bị gà:Rửa sạch cánh gà hoặc đùi gà, để ráo nước.Nếu muốn gà giòn hơn, có thể ướp gà với chút bột chiên giòn hoặc bột bắp.Chiên gà:Đun nóng dầu trong chảo, sau đó chiên gà cho đến khi vàng đều và giòn.Vớt gà ra để ráo dầu.Làm nước mắm:Trong một bát nhỏ, trộn đều nước mắm, đường, nước lọc, nước cốt chanh (nếu dùng), và tiêu.Điều chỉnh gia vị theo khẩu vị của bạn, nếu cần.Phi tỏi ớt:Đun nóng chút dầu trong chảo, phi tỏi băm cho thơm vàng.Thêm ớt vào phi cùng, nếu muốn món ăn có vị cay.Nấu gà với nước mắm:Đổ hỗn hợp nước mắm vào chảo tỏi ớt, đun sôi nhẹ.Cho gà đã chiên vào chảo, đảo đều để gà thấm đều gia vị.Nấu khoảng 2-3 phút cho nước mắm sệt lại và bám đều vào gà.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_return_gachien">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>660</y>
+        <width>93</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>D:/download/tải_xuống-removebg-preview.png</normaloff>D:/download/tải_xuống-removebg-preview.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>0</y>
+        <width>71</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>D:/download/chef.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
