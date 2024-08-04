@@ -113,7 +113,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(57, 60, 68)</string>
+       <string notr="true">color:rgb(255, 255, 255)</string>
       </property>
       <property name="text">
        <string>Nguyên liệu: 500g thịt ba chỉ (có thể thay bằng thịt đùi)
@@ -134,44 +134,6 @@ Trứng vịt luộc chín, bóc vỏ.
 Cho thịt vào tô, ướp với tỏi băm, hành tím băm, 1-2 muỗng canh nước mắm, 1 muỗng cà phê hạt nêm, 1/2 muỗng cà phê tiêu, 1/2 muỗng cà phê muối và 1 muỗng canh đường. Trộn đều và để thịt ngấm gia vị khoảng 30 phút.Làm nước màu (caramel):Đun nóng 2-3 muỗng canh đường trong chảo cho đến khi đường tan và có màu cánh gián. Chú ý không để đường cháy. Sau đó, thêm một chút nước để làm loãng nước màu.Nấu thịt:Cho thịt vào nồi và đảo đều cho đến khi thịt săn lại và ngấm đều màu của nước caramel.Đổ nước dừa vào nồi, thêm ớt (nếu thích ăn cay) và đun sôi.Hạ lửa nhỏ và hầm thịt trong khoảng 1-1.5 giờ cho đn khi thịt mềm và nước kho sệt .Thêm trứng vịt:Khi thịt đã  mềm, thêm trứng vịt vào nồi. Tiếp tục nấu thêm khoảng 15 phút cho trứng ngấm gia vị.</string>
       </property>
       <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>490</x>
-        <y>260</y>
-        <width>351</width>
-        <height>301</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>D:/download/Phone-removebg-preview.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>600</x>
-        <y>310</y>
-        <width>131</width>
-        <height>211</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../../Pictures/Screenshots/Screenshot 2024-07-02 135334.png</pixmap>
-      </property>
-      <property name="scaledContents">
        <bool>true</bool>
       </property>
      </widget>

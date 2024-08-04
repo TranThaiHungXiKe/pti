@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox
+from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox,QDialog
 from PyQt6 import uic
 import sys
 import os
@@ -18,15 +18,41 @@ def show_message_box(title, message, icon):
     msg_box.setText(message)
     msg_box.exec()
 # Class trang đăng nhập
+class AddDialog(QDialog):
+    def __init__(self):
+        super().__init__()
+        uic.loadUi("./ui/add.ui",self)
+        self.btnbox.accepted.connect(self.addFood)
+    def addFood(self):
+        self.L = food()
+        self.L.add_food(cook("null",self.txtFOOD.text(),self.txtDate.text(),self.txtImage.text(),self.txtScore.text()))
+        home.callAfterInit()
+class EditDialog(QDialog):
+    def __init__(self):
+        super().__init__()
+        uic.loadUi("./ui/edit.ui",self)
+    
 class HomeMenuDashboard(QMainWindow,Ui_MainWindow):
     def __init__ (self):
         super().__init__()
         self.setupUi(self)
         self.callAfterInit()
+        self.btnXoaDialog.clicked.connect(self.deletefood)
+        self.btnChinhSuaDialog.clicked.connect(self.showEditDialog)
+        self.btnAddDialog.clicked.connect(self.showAddDialog)
+    def deletefood(self):
+        nameFoodDelete = self.List_cook.currentItem().text()
+        self.List_cook.takeItem(self.List_cook.currentRow())
+        self.L.delete_food_by_name(nameFoodDelete)
+        self.callAfterInit
+    def showAddDialog(self):
+        add.show()
+    def showEditDialog(self):
+        edit.show()
 
     def callAfterInit(self):
         self.L = food()
-
+        self.List_cook.clear()
         for cok in self.L.getAllfood():
             self.List_cook.addItem(cok.getName())
 
@@ -216,6 +242,8 @@ if __name__ == "__main__":
     productPage2 = ProductPage2()
     productPage3 = ProductPage3()
     productPage4 = ProductPage4()
+    add = AddDialog()
+    edit = EditDialog()
 
 
     home.show() # Hiển thị trang đăng nhập
