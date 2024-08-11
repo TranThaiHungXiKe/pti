@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>671</width>
-    <height>592</height>
+    <width>1043</width>
+    <height>672</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>540</y>
+     <x>800</x>
+     <y>600</y>
      <width>211</width>
      <height>32</height>
     </rect>
@@ -38,10 +38,10 @@
   <widget class="QWidget" name="widget_2" native="true">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>70</x>
      <y>20</y>
-     <width>631</width>
-     <height>511</height>
+     <width>901</width>
+     <height>571</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -91,7 +91,7 @@
      <string>EDIT FOOD</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="txtname">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -109,7 +109,7 @@
      <rect>
       <x>50</x>
       <y>170</y>
-      <width>91</width>
+      <width>121</width>
       <height>41</height>
      </rect>
     </property>
@@ -125,7 +125,7 @@
      <string>EDIT DATE</string>
     </property>
    </widget>
-   <widget class="QDateEdit" name="dateEdit">
+   <widget class="QDateEdit" name="txtdate">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -159,7 +159,7 @@
      <string>EDIT IMAGE</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="txtUrl">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -196,7 +196,7 @@
      <string>EDIT RANKING SCORE</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="txtScore">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -207,6 +207,19 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(57, 60, 68)</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>530</y>
+      <width>118</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
   </widget>

@@ -1,5 +1,6 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox,QDialog
 from PyQt6 import uic
+from PyQt6.QtCore import QDate , QDateTime
 import sys
 import os
 
@@ -30,7 +31,25 @@ class AddDialog(QDialog):
 class EditDialog(QDialog):
     def __init__(self):
         super().__init__()
+        self.oldFood = None
         uic.loadUi("./ui/edit.ui",self)
+        self.buttonBox.accepted.connect(self.setNewFood)
+    def setOldfood(self,cook:cook):
+        self.oldFood = cook
+        self.txtname.setText(cook.getName())
+        date_str = cook.getDate()
+        date = QDate.fromString(date_str,"yyyy-MM-dd")
+        self.txtdate.setDate(date)
+        self.txtScore.setText(cook.getScore())
+        self.txtUrl.setText(cook.getLink())
+
+    def setNewFood(self):
+        self.L = food()
+        self.L.delete_food_by_name(self.oldFood.getName())
+
+        self.L.add_food(cook("Null",self.txtname.text(),self.txtdate.text(),self.txtScore   .text(),self.txtUrl.text()))
+        home.callAfterInit()
+        self.close()
     
 class HomeMenuDashboard(QMainWindow,Ui_MainWindow):
     def __init__ (self):
@@ -40,6 +59,7 @@ class HomeMenuDashboard(QMainWindow,Ui_MainWindow):
         self.btnXoaDialog.clicked.connect(self.deletefood)
         self.btnChinhSuaDialog.clicked.connect(self.showEditDialog)
         self.btnAddDialog.clicked.connect(self.showAddDialog)
+        self.btnsearch.clicked.connect(self.searchFood)
     def deletefood(self):
         nameFoodDelete = self.List_cook.currentItem().text()
         self.List_cook.takeItem(self.List_cook.currentRow())
@@ -47,13 +67,23 @@ class HomeMenuDashboard(QMainWindow,Ui_MainWindow):
         self.callAfterInit
     def showAddDialog(self):
         add.show()
+
     def showEditDialog(self):
-        edit.show()
+
+        if self.List_cook.currentRow():
+          edit.setOldfood(self.L.getFoodbyname(self.List_cook.currentItem().text()))
+          edit.show()
 
     def callAfterInit(self):
         self.L = food()
         self.List_cook.clear()
         for cok in self.L.getAllfood():
+            self.List_cook.addItem(cok.getName())
+    def searchFood(self):
+        valueSearch = self.ValueSearch.text()
+        dataSearch = self.L.searchfoodbyname(valueSearch) #--> list object
+        self.List_cook.clear()
+        for cok in dataSearch:
             self.List_cook.addItem(cok.getName())
 
 class LoginPage(QMainWindow):

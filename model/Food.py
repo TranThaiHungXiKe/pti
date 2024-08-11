@@ -18,7 +18,11 @@ class cook:
      def getName(self):
          return self.name
      def getDate(self):
-         raise self.date
+         return self.date
+     def getScore(self):
+         return self.score
+     def getLink(self):
+         return self.link
 
 
      def open_cook(self):
@@ -69,11 +73,16 @@ class food:
                  for cok in jsonfile:
                      Cook = cook(cok["id"],cok["name"],cok["date"],cok["score"],cok["link"])
                      self.add_food(Cook)
+     def getFoodbyname(self,nameFood):
+         for Cook in self.list :
+             if Cook.getName() == nameFood:
+                 return Cook
+     
 
 L = food()
 
 L.delete_food_by_name("thit kho hot vit")
 L.edit_food_by_name("thit cho",cook("1000","An la ia","16/7","100","https://www.bachhoaxanh.com/thit-heo"))
-L.searchfoodbyname("An la ")
+L.searchfoodbyname("An la ia")
 
 
