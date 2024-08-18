@@ -60,6 +60,12 @@ class HomeMenuDashboard(QMainWindow,Ui_MainWindow):
         self.btnChinhSuaDialog.clicked.connect(self.showEditDialog)
         self.btnAddDialog.clicked.connect(self.showAddDialog)
         self.btnsearch.clicked.connect(self.searchFood)
+        self.pushButton_back.clicked.connect(self.ShowMainPage)
+
+    def ShowMainPage(self):
+          mainPage.show()
+          self.close()
+
     def deletefood(self):
         nameFoodDelete = self.List_cook.currentItem().text()
         self.List_cook.takeItem(self.List_cook.currentRow())
@@ -157,15 +163,27 @@ class MainPage(QMainWindow):
         uic.loadUi("ui/MainPage.ui",self) # Load Giao diện từ file .ui
         # ====== Kết nối sự kiện ở đây
         self.pushButton_ranking.clicked.connect(self.ShowRanKingPage)
+        self.pushButton_add.clicked.connect(self.ShowAddminPage)
 
       def ShowRanKingPage(self):
         sorTing.show()  
-        self.close()  
+        self.close()
+      def ShowAddminPage(self):
+        home.show()
+        self.close()
+          
+
 class SorTing(QMainWindow):
       def __init__(self):
          super().__init__()
          uic.loadUi("ui/sortingpage.ui",self)
-        
+           # ====== Kết nối sự kiện ở đây
+         self.pushButton_back.clicked.connect(self.ShowMainPage)
+
+      def ShowMainPage(self):
+          mainPage.show()
+          self.close()
+
         
 
 

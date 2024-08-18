@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>919</width>
-    <height>716</height>
+    <height>740</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -91,10 +91,10 @@
    <widget class="QLineEdit" name="ValueSearch">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>170</x>
       <y>580</y>
       <width>581</width>
-      <height>61</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -109,9 +109,9 @@ color: rgb(255, 255, 255);
    <widget class="QPushButton" name="btnsearch">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>580</y>
-      <width>71</width>
+      <x>140</x>
+      <y>570</y>
+      <width>31</width>
       <height>61</height>
      </rect>
     </property>
@@ -124,6 +124,32 @@ color: rgb(255, 255, 255);
     <property name="icon">
      <iconset>
       <normaloff>D:/download/search.png</normaloff>D:/download/search.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_back">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>570</y>
+      <width>161</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(57, 60, 68)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>D:/download/back-button.png</normaloff>D:/download/back-button.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>100</height>
+     </size>
     </property>
    </widget>
   </widget>
