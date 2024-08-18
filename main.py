@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox,QDialog
+from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox,QDialog , QWidget
 from PyQt6 import uic
 from PyQt6.QtCore import QDate , QDateTime
 import sys
@@ -90,7 +90,7 @@ class LoginPage(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("ui/LoginPage.ui",self) # Load Giao diện từ file .ui
-        self.L = ListAccount()
+        
 
         # ====== Kết nối sự kiện ở đây
         self.pushButton_login.clicked.connect(self.checkLogin)
@@ -101,9 +101,9 @@ class LoginPage(QMainWindow):
     # Hàm kiểm tra đăng nhập
     def checkLogin(self):
 
-       print(self.L.checkAccount(Account(self.lineEdit_Fullname.text(), self.lineEdit_Password.text(),)))
+       print(ListAcc.checkAccount(Account(self.lineEdit_Fullname.text(), self.lineEdit_Password.text(),)))
        print(self.lineEdit_Fullname.text() , self.lineEdit_Password.text() ) 
-       if self.L.checkAccount(Account(self.lineEdit_Fullname.text(), self.lineEdit_Password.text(),)) == True:
+       if ListAcc.checkAccount(Account(self.lineEdit_Fullname.text(), self.lineEdit_Password.text(),)) == True:
            mainPage.show()
            self.close()
 
@@ -113,12 +113,9 @@ class SigninPage(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("ui/SigninPage.ui",self) 
-        self.L = ListAccount()
-    
-    
-               
+        ListAcc = ListAccount()         
               # ====== Kết nối sự kiện ở đây
-        #self.pushButton_Gologin.clicked.connect(self.showLoginPage)
+        self.pushButton_Gologin.clicked.connect(self.showLoginPage)
         self.pushButton_Signup.clicked.connect(self.registerAccount)
     def showLoginPage(self):
         loginPage.show()  # Hiển thị trang đăng nhập
@@ -137,8 +134,9 @@ class SigninPage(QMainWindow):
             show_message_box("Lỗi", "Mật khẩu không khớp! Vui lòng nhập lại.", QMessageBox.Icon.Warning)
             return
 
-        self.L.addAccount(Account(username,password))
-        self.L.saveAllAccount()
+        ListAcc.addAccount(Account(username,password))
+        ListAcc.saveAllAccount()
+        self.showLoginPage()
      # Hàm lưu tài khoản vào file users.txt
     def saveAccount(self, username, password):
         if os.path.exists("users.txt"):
@@ -157,125 +155,34 @@ class MainPage(QMainWindow):
       def __init__(self):
         super().__init__()
         uic.loadUi("ui/MainPage.ui",self) # Load Giao diện từ file .ui
-           # ====== Kết nối sự kiện ở đây
-        self.pushButton_recipe_Thitkho.clicked.connect(self.showProductPage1)
-        self.pushButton_book_thitkho.clicked.connect(self.showProductPage2)
-        self.pushButton_recipe_gachien.clicked.connect(self.showProductPage3)
-        self.pushButton_book_gachien.clicked.connect(self.showProductPage4)
+        # ====== Kết nối sự kiện ở đây
+        self.pushButton_ranking.clicked.connect(self.ShowRanKingPage)
+
+      def ShowRanKingPage(self):
+        sorTing.show()  
+        self.close()  
+class SorTing(QMainWindow):
+      def __init__(self):
+         super().__init__()
+         uic.loadUi("ui/sortingpage.ui",self)
         
-       # Hàm chuyển sang trang sản phẩm 1
-      def showProductPage1(self):
-         productPage1.show()
-         self.close()
-         # Hàm chuyển sang trang sản phẩm 2
-      def showProductPage2(self):
-         productPage2.show()
-         self.close()
-      # Hàm chuyển sang trang sản phẩm 3
-      def showProductPage3(self):
-         productPage3.show()
-         self.close()
-      # Hàm chuyển sang trang sản phẩm 4
-      def showProductPage4(self):
-         productPage4.show()
-         self.close()
-
-
-# Class trang sản phẩm 1
-class ProductPage1(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        uic.loadUi("ui/ProductPage1.ui",self) # Load Giao diện từ file .ui
-         # ====== Kết nối sự kiện ở đây
-        self.pushButton_Thitkho.clicked.connect(self.mainpage)
-    
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-class ProductPage2(QMainWindow): 
-    def __init__(self):
-        super().__init__()
-        uic.loadUi("ui/ProductPage1Book.ui",self)
-          # ====== Kết nối sự kiện ở đây
-        self.pushButton_Thitkho_book.clicked.connect(self.mainpage)
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-
-class ProductPage3(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        uic.loadUi("ui/ProductPage2.ui",self)
-           # ====== Kết nối sự kiện ở đây
-        self.pushButton_return_gachien.clicked.connect(self.mainpage)
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-
-class ProductPage4(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        uic.loadUi("ui/ProductPage2Book.ui",self)
-           # ====== Kết nối sự kiện ở đây
-        self.pushButton_return_gachien_book.clicked.connect(self.mainpage)
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-
-
-    
-
-
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-
-    
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-
-
-    
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-    
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-          
-    
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-
         
-    
-    def mainpage (self):
-        mainPage.show()
-        self.close()
-    
-       
-
-
 
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     loginPage = LoginPage() # Tạo đối tượng LoginPage
+    sorTing = SorTing()
     signupPage = SigninPage() # Tạo đối tượng SignupPage
     mainPage = MainPage()
     home = HomeMenuDashboard()
-    productPage1 = ProductPage1()
-    productPage2 = ProductPage2()
-    productPage3 = ProductPage3()
-    productPage4 = ProductPage4()
+    ListAcc = ListAccount()
+   
     add = AddDialog()
     edit = EditDialog()
 
 
-    home.show() # Hiển thị trang đăng nhập
+    loginPage.show() # Hiển thị trang đăng nhập
 
     sys.exit(app.exec())
