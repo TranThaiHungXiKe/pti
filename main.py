@@ -167,11 +167,14 @@ class SorTing (QMainWindow,Ui_sorting):
             self.label_19.setObjectName("label_19")
             self.pushButton_2 = QtWidgets.QPushButton(parent=self.widget_2)
             self.pushButton_2.setGeometry(QtCore.QRect(520, 520, 93, 81))
-            self.pushButton_2.setText("")
+            self.pushButton_2.setText("hehe")
             #self.pushButton_2.setIcon(icon2)
             self.pushButton_2.setIconSize(QtCore.QSize(80, 70))
-            self.pushButton_2.setObjectName("pushButton_2")
+            self.pushButton_2.setObjectName("pushButton_2")     
+            self.pushButton_2.clicked.connect(lambda a : self.openlink(a = x))
             self.horizontalLayout_2.addWidget(self.widget_2)
+    def openlink(self,a):
+        a.open_cook()
 class HomeMenuDashboard(QMainWindow,Ui_MainWindow):
     def __init__ (self):
         super().__init__()
@@ -309,6 +312,6 @@ if __name__ == "__main__":
     edit = EditDialog()
 
 
-    loginPage.show() # Hiển thị trang đăng nhập
+    mainPage.show() # Hiển thị trang đăng nhập
 
     sys.exit(app.exec())
