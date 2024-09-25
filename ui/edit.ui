@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1043</width>
-    <height>672</height>
+    <width>800</width>
+    <height>742</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>800</x>
-     <y>600</y>
+     <x>570</x>
+     <y>680</y>
      <width>211</width>
      <height>32</height>
     </rect>
@@ -38,10 +38,10 @@
   <widget class="QWidget" name="widget_2" native="true">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>20</x>
      <y>20</y>
-     <width>901</width>
-     <height>571</height>
+     <width>761</width>
+     <height>641</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -159,7 +159,7 @@
      <string>EDIT IMAGE</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txtUrl">
+   <widget class="QLineEdit" name="txtImage">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -193,10 +193,10 @@
      <string notr="true">color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>EDIT RANKING SCORE</string>
+     <string>EDIT Link</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txtScore">
+   <widget class="QLineEdit" name="txtUrl">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -220,6 +220,119 @@
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_browse">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>260</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_browse_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>340</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_edit_recipe">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>430</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(57, 60, 68)</string>
+    </property>
+    <property name="text">
+     <string>Edit Recipe</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>490</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Edit information</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>430</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Edit Recipe</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtUrl_edit_information">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>500</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(57, 60, 68)</string>
     </property>
    </widget>
   </widget>

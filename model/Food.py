@@ -2,15 +2,18 @@ import webbrowser
 import json
 
 class cook:
-     def __init__(self,id,name,date,score,link):
+     def __init__(self,id,name,date,score,link, img, recipe,information):
          self.id = id
          self.name = name
          self.date = date
          self.score = score
          self.link = link
+         self.img = img
+         self.recipe = recipe
+         self.information = information
 
      def show(self):
-         print(self.id,"-",self.name,"-",self.date,"-",self.score,"-",self.link,"-")
+         print(self.id,"-",self.name,"-",self.date,"-",self.score,"-",self.link,"-",self.img,"-")
         
 
      def getId(self):
@@ -23,6 +26,13 @@ class cook:
          return self.score
      def getLink(self):
          return self.link
+     def getImg(self):
+         return self.img
+     def getRecipe(self):
+         return self.recipe
+     def getInformation(self):
+         return self.information
+         
 
 
      def open_cook(self):
@@ -56,7 +66,8 @@ class food:
             for account in self.list:
                 jsonfile.append(account.__dict__)
             with open("data/food.json","w") as file:
-                json.dump(jsonfile, file ,indent=5)
+                json.dump(jsonfile, file ,indent=8)
+                          
      def searchfoodbyname(self,name):
          result = []
          for cook in self.list:
@@ -71,18 +82,11 @@ class food:
              with open ("data/food.json","r") as file:
                  jsonfile = json.load(file)
                  for cok in jsonfile:
-                     Cook = cook(cok["id"],cok["name"],cok["date"],cok["score"],cok["link"])
+                     Cook = cook(cok["id"],cok["name"],cok["date"],cok["score"],cok["link"],cok["img"],cok["recipe"],cok["information"])
                      self.add_food(Cook)
      def getFoodbyname(self,nameFood):
          for Cook in self.list :
              if Cook.getName() == nameFood:
                  return Cook
      
-
-L = food()
-
-L.delete_food_by_name("thit kho hot vit")
-L.edit_food_by_name("thit cho",cook("1000","An la ia","16/7","100","https://www.bachhoaxanh.com/thit-heo"))
-L.searchfoodbyname("An la ia")
-
 

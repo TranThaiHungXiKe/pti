@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1074</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>-1</y>
+      <width>1071</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;background-color: rgb(57, 60, 68)</string>
+    </property>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>50</y>
+       <width>971</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(31, 31, 31)
+</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>210</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Thông Tin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>230</y>
+        <width>351</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Nguồn gốc của món thịt kho hột vịt
+Nguồn gốc chính xác của món thịt kho hột vịt không được ghi chép rõ ràng trong sử sách, nhưng có một số giả thuyết và yếu tố lịch sử liên quan đến món ăn này:
+
+Ảnh hưởng văn hóa Trung Hoa: Tên gọi &quot;thịt kho tàu&quot; có thể gây hiểu lầm về nguồn gốc. Từ &quot;tàu&quot; trong tiếng Việt thường ám chỉ người hoặc văn hóa Trung Hoa. Tuy nhiên, nhiều nhà nghiên cứu cho rằng món ăn này không có liên quan trực tiếp đến Trung Hoa. Thay vào đó, từ &quot;tàu&quot; ở đây có thể bắt nguồn từ cách nói miền Nam, mang nghĩa &quot;nhạt&quot; hoặc &quot;kho bằng nước&quot;. Một số ý kiến khác cho rằng &quot;tàu&quot; có nghĩa là cách nấu bình yên, thanh tịnh và nhẹ nhàng, mang tính chất giản dị.
+
+Sự phổ biến trong các dịp Tết Nguyên Đán: Món thịt kho hột vịt thường được chuẩn bị trong các dịp Tết Nguyên Đán ở miền Nam Việt Nam. Do thời gian bảo quản lâu, món ăn này phù hợp để nấu một lần cho nhiều ngày Tết, khi mà người Việt thường kiêng kỵ việc nấu nướng vào những ngày đầu năm mới.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>20</y>
+        <width>301</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../Pictures/Screenshots/Screenshot 2024-06-30 221921.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>281</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../Pictures/Screenshots/Screenshot 2024-07-02 131556.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_back_2">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>670</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>D:/download/back-button.png</normaloff>D:/download/back-button.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>100</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1074</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

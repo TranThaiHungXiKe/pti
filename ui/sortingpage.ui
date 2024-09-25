@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1298</width>
+    <width>1297</width>
     <height>773</height>
    </rect>
   </property>
@@ -317,7 +317,7 @@ color: rgb(255, 255, 255);</string>
            <widget class="QPushButton" name="pushButton_recipe_Thitkho">
             <property name="geometry">
              <rect>
-              <x>130</x>
+              <x>150</x>
               <y>220</y>
               <width>71</width>
               <height>61</height>
@@ -342,34 +342,6 @@ color: rgb(255, 255, 255);</string>
              </size>
             </property>
            </widget>
-           <widget class="QPushButton" name="pushButton_book_thitkho">
-            <property name="geometry">
-             <rect>
-              <x>220</x>
-              <y>220</y>
-              <width>71</width>
-              <height>61</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>1</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>D:/download/book.png</normaloff>D:/download/book.png</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>100</width>
-              <height>70</height>
-             </size>
-            </property>
-           </widget>
            <widget class="QPushButton" name="pushButton">
             <property name="geometry">
              <rect>
@@ -389,6 +361,29 @@ color: rgb(255, 255, 255);</string>
             <property name="iconSize">
              <size>
               <width>80</width>
+              <height>70</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_thitkho">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>220</y>
+              <width>93</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>D:/download/book.png</normaloff>D:/download/book.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>70</width>
               <height>70</height>
              </size>
             </property>
@@ -550,34 +545,6 @@ color: rgb(255, 255, 255);</string>
           <bool>true</bool>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_book_thitkho_2">
-         <property name="geometry">
-          <rect>
-           <x>290</x>
-           <y>530</y>
-           <width>71</width>
-           <height>61</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>1</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>D:/download/book.png</normaloff>D:/download/book.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>100</width>
-           <height>70</height>
-          </size>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_17">
          <property name="geometry">
           <rect>
@@ -722,6 +689,29 @@ color: rgb(255, 255, 255);</string>
           </size>
          </property>
         </widget>
+        <widget class="QPushButton" name="pushButton_thitkho_2">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>530</y>
+           <width>93</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>D:/download/book.png</normaloff>D:/download/book.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>70</width>
+           <height>70</height>
+          </size>
+         </property>
+        </widget>
        </widget>
       </item>
      </layout>
@@ -769,7 +759,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1298</width>
+     <width>1297</width>
      <height>26</height>
     </rect>
    </property>

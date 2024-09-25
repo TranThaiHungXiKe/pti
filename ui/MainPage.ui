@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1224</width>
-    <height>771</height>
+    <height>782</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -133,35 +133,13 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>590</y>
-        <width>51</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(57, 60, 68)</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>D:/download/settings.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pushButton_add">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>490</y>
-        <width>71</width>
-        <height>61</height>
+        <x>-10</x>
+        <y>500</y>
+        <width>91</width>
+        <height>71</height>
        </rect>
       </property>
       <property name="text">
@@ -182,9 +160,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>380</y>
+        <y>410</y>
         <width>71</width>
-        <height>71</height>
+        <height>81</height>
        </rect>
       </property>
       <property name="text">
@@ -198,6 +176,29 @@
        <size>
         <width>50</width>
         <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_setting">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>590</y>
+        <width>93</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>D:/download/settings.png</normaloff>D:/download/settings.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>60</height>
        </size>
       </property>
      </widget>

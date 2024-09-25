@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>671</width>
-    <height>592</height>
+    <width>855</width>
+    <height>694</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
   <widget class="QDialogButtonBox" name="btnbox">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>540</y>
+     <x>620</x>
+     <y>630</y>
      <width>211</width>
      <height>32</height>
     </rect>
@@ -39,9 +39,9 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>20</y>
-     <width>631</width>
-     <height>511</height>
+     <y>30</y>
+     <width>811</width>
+     <height>591</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -107,9 +107,9 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>60</x>
       <y>170</y>
-      <width>91</width>
+      <width>81</width>
       <height>41</height>
      </rect>
     </property>
@@ -193,7 +193,7 @@
      <string notr="true">color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>RANKING SCORE</string>
+     <string>      URL</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="txtScore">
@@ -201,6 +201,116 @@
      <rect>
       <x>230</x>
       <y>340</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(57, 60, 68)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_browse">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>270</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_browse_URL">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>340</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>400</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Recipe</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>460</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Information</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_recipe">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>400</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(57, 60, 68)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtInformation">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>460</y>
       <width>281</width>
       <height>41</height>
      </rect>
