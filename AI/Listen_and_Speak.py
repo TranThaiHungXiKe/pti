@@ -28,5 +28,3 @@ def speech_to_text()->str:
      except sr.RequestError as e:
         text_to_speech(f"Could not Request result from Google Speech Recognition service; {e}")
         return ""
-
-speech_to_text()

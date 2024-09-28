@@ -88,5 +88,12 @@ class food:
          for Cook in self.list :
              if Cook.getName() == nameFood:
                  return Cook
+     def sortFoodByName(self):
+         self.list.sort(key= lambda cook: cook.getName())
+         self.show_all_food()
+     def sortFoodByScore(self):
+         self.list.sort(key= lambda cook:int( cook.getScore()),reverse=True)
+         self.show_all_food()
+         
      
 

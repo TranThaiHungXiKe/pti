@@ -1,32 +1,42 @@
 [
         {
                 "id": "Null",
-                "name": "22",
-                "date": "1/1/2000",
-                "score": "10",
-                "link": "ssas",
-                "img": "C:/Users/LapTop HD/Pictures/picture/f6ccabba-ea38-411f-a673-04f26b5e919c_980x980.jpg",
-                "recipe": "sssssss",
-                "information": "aaaaaaaa"
-        },
-        {
-                "id": "Null",
-                "name": "cbd",
-                "date": "1/1/2000",
-                "score": "10",
-                "link": "aaa",
-                "img": "C:/Users/LapTop HD/Pictures/Screenshots/Screenshot 2024-07-02 181839.png",
-                "recipe": "hello",
-                "information": "aaaa"
-        },
-        {
-                "id": "Null",
                 "name": "Th\u1ecbt kho h\u1ed9t v\u1ecbt",
-                "date": "1/1/2000",
-                "score": "10",
+                "date": "2/1/2000",
+                "score": "99",
                 "link": "",
                 "img": "C:/Users/LapTop HD/Pictures/Screenshots/Screenshot 2024-06-30 221921.png",
                 "recipe": "hehe",
                 "information": ""
+        },
+        {
+                "id": "null",
+                "name": "Thit ga 1",
+                "date": "1/1/2011",
+                "score": "43",
+                "link": "",
+                "img": "",
+                "recipe": "se",
+                "information": "\u00e2"
+        },
+        {
+                "id": "null",
+                "name": "chicken",
+                "date": "1/1/2000",
+                "score": "2",
+                "link": "",
+                "img": "",
+                "recipe": "chicken",
+                "information": ""
+        },
+        {
+                "id": "Null",
+                "name": "Thit ga",
+                "date": "1/1/2000",
+                "score": "10",
+                "link": "",
+                "img": "",
+                "recipe": "aa",
+                "information": "\u00e2"
         }
 ]
